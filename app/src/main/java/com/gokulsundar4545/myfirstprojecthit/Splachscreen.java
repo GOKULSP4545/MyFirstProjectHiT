@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class Splachscreen extends AppCompatActivity {
 
+    //Initilize Variables
     ImageView Splachimage1;
     TextView Txt,Txt1;
 
@@ -21,7 +22,7 @@ public class Splachscreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splachscreen);
 
-
+        //Declare Variable
         Splachimage1=findViewById(R.id.Splachimage);
         Txt=findViewById(R.id.Txt);
         Txt1=findViewById(R.id.Txt1);
@@ -33,6 +34,8 @@ public class Splachscreen extends AppCompatActivity {
 
 
 
+
+        //Handler Class-for to set Time and Intent
         Handler handler=new Handler();
 
         handler.postDelayed(new Runnable() {
